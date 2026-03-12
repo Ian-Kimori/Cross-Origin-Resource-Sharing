@@ -149,8 +149,8 @@ Even with perfect CORS misconfiguration:
 
 ### The ONLY thing that happens:
 
-✔ The **victim’s browser** does the sending  
 ✔ The **victim’s browser** does the reading  
+✔ The **victim’s browser** does the sending  
 ✔ The **victim’s browser** forwards it to the attacker
 
 The browser is the “bridge.”
