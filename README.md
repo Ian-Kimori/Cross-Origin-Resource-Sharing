@@ -47,7 +47,7 @@ The browser makes this request:
 
 ***
 
-# **3. Bank.com sees Origin: http://evil.com**
+# **3. Bank.com sees Origin: evil.com**
 
 If CORS is misconfigured, bank.com replies with:
 
