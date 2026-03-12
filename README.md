@@ -137,7 +137,7 @@ Now the stolen bank data is sent to the attacker’s server.
 
 ***
 
-# ❌ **Key Debunk: bank.com NEVER sends the response to evil.com directly**
+# **Key Debunk: bank.com NEVER sends the response to evil.com directly**
 
 This is the most important thing to understand.
 
@@ -154,20 +154,3 @@ Even with perfect CORS misconfiguration:
 ✔ The **victim’s browser** forwards it to the attacker
 
 The browser is the “bridge.”
-
-***
-
-# 🟩 **SO YOUR FINAL ANSWER**
-
-**YES**, the two websites must exist for the attack.  
-**NO**, bank.com does NOT talk directly to evil.com.  
-**YES**, the victim’s browser is the middleman that:
-
-1.  loads the malicious script from evil.com
-2.  sends authenticated requests to bank.com
-3.  receives bank.com’s CORS-permitted data
-4.  forwards it to evil.com
-
-***
-
-If you want, I can show you **the exact malicious HTML page** an attacker would host that carries out a real CORS attack on your target.
