@@ -74,6 +74,7 @@ It replies like any normal HTTP request:
     { "balance": 10000 }
 
 This response goes:
+
 ➡️ From bank.com  
 ➡️ To the victim’s browser
 
