@@ -1,7 +1,5 @@
 # Cross-Origin-Resource-Sharing
 
-Ian, let’s make this **very clear**, **very simple**, and **very accurate** — because CORS confuses even advanced testers.
-
 You are asking:
 
 > **If bank.com allows CORS from evil.com, how does the malicious script from evil.com go to the victim’s browser, and how does data reach evil.com afterward?**
@@ -10,7 +8,7 @@ Here is the **exact sequence** of what happens — broken down step‑by‑step 
 
 ***
 
-# 🔥 **1. Victim opens evil.com — malicious script loads**
+# **1. Victim opens evil.com — malicious script loads**
 
 The attacker puts this code on **evil.com**:
 
@@ -31,7 +29,7 @@ It runs in the victim’s browser.**
 
 ***
 
-# 🔥 **2. Victim’s browser sends a request to bank.com**
+# **2. Victim’s browser sends a request to bank.com**
 
 Because the victim is already logged into bank.com, the browser automatically attaches:
 
@@ -49,7 +47,7 @@ The browser makes this request:
 
 ***
 
-# 🔥 **3. Bank.com sees Origin: <http://evil.com>**
+# **3. Bank.com sees Origin: <http://evil.com>**
 
 If CORS is misconfigured, bank.com replies with:
 
@@ -66,7 +64,7 @@ but that EVIL.COM’s JavaScript in the victim’s browser is allowed to read it
 
 ***
 
-# 🔥 **4. The response from bank.com goes ONLY to the victim’s browser**
+# **4. The response from bank.com goes ONLY to the victim’s browser**
 
 Bank.com **never** sends data to evil.com.
 
@@ -83,7 +81,7 @@ This response goes:
 
 ***
 
-# 🔥 **5. The attacker’s JavaScript running in the victim’s browser reads the response**
+# **5. The attacker’s JavaScript running in the victim’s browser reads the response**
 
 Because CORS allows it, the JavaScript that evil.com injected can do this:
 
@@ -97,7 +95,7 @@ Now the script **has access to the victim’s bank data** in the browser.
 
 ***
 
-# 🔥 **6. Then the script sends the stolen data to evil.com**
+# **6. Then the script sends the stolen data to evil.com**
 
 How does the data reach the attacker?
 
