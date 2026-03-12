@@ -113,7 +113,7 @@ Now the stolen bank data is sent to the attacker’s server.
 
 ***
 
-# 🧠 **FULL FLOW (VERY IMPORTANT)**
+# **FULL FLOW (VERY IMPORTANT)**
 
 ### ✔ Step 1: Victim visits evil.com
 
